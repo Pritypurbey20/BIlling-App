@@ -1,0 +1,26 @@
+<form [formGroup]="Userform" id="formData" #userData="ngForm" (ngSubmit)="updateUser()">
+    <div class="row mb-3">
+        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Name</label>
+        <div class="col-md-8 col-lg-9">
+            <input name="Name" type="text" class="form-control" formControlName="Name" id="Name">
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label for="company" class="col-md-4 col-lg-3 col-form-label">Address</label>
+        <div class="col-md-8 col-lg-9">
+            <input name="Address" type="text" class="form-control" formControlName="Address" id="Address">
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label for="Job" class="col-md-4 col-lg-3 col-form-label">GST Number</label>
+        <div class="col-md-8 col-lg-9">
+            <input name="GST_no" type="text" class="form-control" id="GST_no" formControlName="GST_no">
+        </div>
+    </div>
+
+    <div class="text-center">
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+    </div>
+</form>
